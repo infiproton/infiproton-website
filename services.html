@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Infiproton</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="images/infiproton-logo.png" alt="Infiproton" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="index.html#technologies">Technologies</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive software solutions tailored to your business needs</p>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="detailed-services">
+        <div class="container">
+            <!-- Software Development -->
+            <div class="service-detail">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2><i class="fas fa-code"></i> Software Development</h2>
+                        <p>We specialize in building robust, scalable software solutions using modern technologies and best practices. Our expertise spans from enterprise Java applications to microservices architectures.</p>
+
+                        <h3>What We Offer:</h3>
+                        <ul>
+                            <li>Enterprise Java Applications with Spring Boot</li>
+                            <li>Microservices Architecture Design</li>
+                            <li>RESTful API Development</li>
+                            <li>Database Design and Optimization</li>
+                            <li>Legacy System Modernization</li>
+                            <li>Performance Tuning and Optimization</li>
+                        </ul>
+
+                        <h3>Technologies:</h3>
+                        <div class="tech-badges">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Spring Security</span>
+                            <span>Hibernate</span>
+                            <span>Maven</span>
+                            <span>Gradle</span>
+                        </div>
+                    </div>
+                    <div class="service-visual">
+                        <div class="code-preview">
+                            <div class="code-header">
+                                <div class="code-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span>UserController.java</span>
+                            </div>
+                            <div class="code-content">
+                                <code>
+@RestController<br>
+@RequestMapping("/api/users")<br>
+public class UserController {<br>
+&nbsp;&nbsp;@Autowired<br>
+&nbsp;&nbsp;private UserService userService;<br>
+<br>
+&nbsp;&nbsp;@GetMapping<br>
+&nbsp;&nbsp;public ResponseEntity&lt;List&lt;User&gt;&gt;<br>
+&nbsp;&nbsp;getAllUsers() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return ResponseEntity.ok(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userService.findAll());<br>
+&nbsp;&nbsp;}<br>
+}
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="service-detail reverse">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2><i class="fas fa-globe"></i> Web Development</h2>
+                        <p>Create modern, responsive web applications that deliver exceptional user experiences. We build everything from simple websites to complex web applications using the latest frontend and backend technologies.</p>
+
+                        <h3>What We Offer:</h3>
+                        <ul>
+                            <li>Responsive Web Design</li>
+                            <li>Single Page Applications (SPA)</li>
+                            <li>Progressive Web Apps (PWA)</li>
+                            <li>E-commerce Solutions</li>
+                            <li>Content Management Systems</li>
+                            <li>Web Performance Optimization</li>
+                        </ul>
+
+                        <h3>Technologies:</h3>
+                        <div class="tech-badges">
+                            <span>React</span>
+                            <span>Vue.js</span>
+                            <span>TypeScript</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                    <div class="service-visual">
+                        <div class="browser-mockup">
+                            <div class="browser-header">
+                                <div class="browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="browser-url">https://your-app.com</div>
+                            </div>
+                            <div class="browser-content">
+                                <div class="mockup-element header"></div>
+                                <div class="mockup-element sidebar"></div>
+                                <div class="mockup-element main">
+                                    <div class="mockup-card"></div>
+                                    <div class="mockup-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud Solutions -->
+            <div class="service-detail">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2><i class="fas fa-cloud"></i> Cloud Solutions</h2>
+                        <p>Leverage the power of cloud computing to scale your applications and reduce infrastructure costs. We provide comprehensive cloud migration, deployment, and management services.</p>
+
+                        <h3>What We Offer:</h3>
+                        <ul>
+                            <li>Cloud Migration Strategy</li>
+                            <li>Serverless Architecture</li>
+                            <li>Container Orchestration</li>
+                            <li>Auto-scaling Solutions</li>
+                            <li>Cost Optimization</li>
+                            <li>Security and Compliance</li>
+                        </ul>
+
+                        <h3>Platforms:</h3>
+                        <div class="tech-badges">
+                            <span>AWS</span>
+                            <span>Azure</span>
+                            <span>Google Cloud</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Terraform</span>
+                        </div>
+                    </div>
+                    <div class="service-visual">
+                        <div class="cloud-diagram">
+                            <div class="cloud-item">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="cloud-item">
+                                <i class="fab fa-microsoft"></i>
+                                <span>Azure</span>
+                            </div>
+                            <div class="cloud-item">
+                                <i class="fab fa-google"></i>
+                                <span>GCP</span>
+                            </div>
+                            <div class="cloud-center">
+                                <i class="fas fa-cloud"></i>
+                                <span>Multi-Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI & Automation -->
+            <div class="service-detail reverse">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2><i class="fas fa-robot"></i> AI & Automation</h2>
+                        <p>Harness the power of artificial intelligence to automate processes, gain insights, and create intelligent applications. We build AI agents and machine learning solutions tailored to your business needs.</p>
+
+                        <h3>What We Offer:</h3>
+                        <ul>
+                            <li>AI Agent Development</li>
+                            <li>Natural Language Processing</li>
+                            <li>Machine Learning Models</li>
+                            <li>Process Automation</li>
+                            <li>Chatbots and Virtual Assistants</li>
+                            <li>Predictive Analytics</li>
+                        </ul>
+
+                        <h3>Technologies:</h3>
+                        <div class="tech-badges">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                            <span>OpenAI</span>
+                            <span>LangChain</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                    <div class="service-visual">
+                        <div class="ai-visualization">
+                            <div class="neural-network">
+                                <div class="layer input-layer">
+                                    <div class="node"></div>
+                                    <div class="node"></div>
+                                    <div class="node"></div>
+                                </div>
+                                <div class="layer hidden-layer">
+                                    <div class="node"></div>
+                                    <div class="node"></div>
+                                    <div class="node"></div>
+                                    <div class="node"></div>
+                                </div>
+                                <div class="layer output-layer">
+                                    <div class="node"></div>
+                                    <div class="node"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Development Process</h2>
+                <p>We follow a proven methodology to ensure project success</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>Understanding your requirements, goals, and technical constraints</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Planning</h3>
+                    <p>Architecture design, technology selection, and project roadmap</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Development</h3>
+                    <p>Agile development with regular updates and feedback cycles</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Testing</h3>
+                    <p>Comprehensive testing including unit, integration, and user testing</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Deployment</h3>
+                    <p>Smooth deployment with monitoring and support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss how we can help bring your ideas to life with cutting-edge technology solutions.</p>
+                <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Infiproton</h3>
+                    <p>Innovative software solutions and AI development for the modern world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Software Development</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Cloud Solutions</a></li>
+                        <li><a href="services.html">AI & Automation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="#">YouTube Channel</a></li>
+                        <li><a href="#">Udemy Courses</a></li>
+                        <li><a href="index.html#technologies">Technologies</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>harish@infiproton.com</li>
+                        <li>www.infiproton.com</li>
+                        <li>Global Services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Infiproton. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
