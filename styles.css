@@ -580,6 +580,55 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.contact-message {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.email-cta {
+    text-align: center;
+}
+
+.email-cta i {
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.email-cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.email-cta p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.email-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.email-note {
+    margin-top: 1rem;
+}
+
+.email-note small {
+    color: #888;
+    font-style: italic;
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
