@@ -55,6 +55,17 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
 }
 
 .logo-img {
@@ -366,7 +377,7 @@ section {
 /* What's New Section */
 .whats-new {
     padding: 5rem 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
     position: relative;
     overflow: hidden;
@@ -397,16 +408,17 @@ section {
 }
 
 .featured-new {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 2.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     display: flex;
     gap: 2rem;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
 }
 
 .featured-new:hover {
@@ -446,14 +458,16 @@ section {
 .new-details h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: white;
+    color: #2c3e50;
+    font-weight: 700;
 }
 
 .new-details p {
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
-    opacity: 0.9;
+    color: #555;
+    opacity: 1;
 }
 
 .new-features {
@@ -468,14 +482,16 @@ section {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 500;
+    color: white;
 }
 
 .feature-item i {
-    color: #4CAF50;
+    color: #fff;
+    opacity: 0.9;
 }
 
 .new-actions {
@@ -962,20 +978,190 @@ section {
 
 /* Course Showcase (Simplified) */
 .course-showcase {
-    padding: 1rem 0;
+    padding: 1.5rem 0 3rem 0;
 }
 
-.course-grid {
-    max-width: 800px;
+/* Featured Course Section */
+.featured-section {
+    margin-bottom: 4rem;
+}
+
+.featured-section .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.featured-section .section-header h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.featured-section .section-header h2 i {
+    color: #667eea;
+    margin-right: 0.5rem;
+}
+
+.featured-section .section-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.featured-course-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+    display: flex;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
+.featured-course-hero .course-image {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-course-hero .course-image i {
+    font-size: 4rem;
+    color: white;
+}
+
+.featured-course-hero .course-info {
+    background: white;
+    padding: 2.5rem;
+    flex: 1;
+}
+
+.featured-course-hero .course-info h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* All Courses Section */
+.all-courses-section {
+    margin-bottom: 3rem;
+}
+
+.all-courses-section .section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.all-courses-section .section-header h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.all-courses-section .section-header h2 i {
+    color: #667eea;
+    margin-right: 0.5rem;
+}
+
+.all-courses-section .section-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.course-image-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-image-card i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.course-content {
+    padding: 1.5rem;
+}
+
+.course-content h4 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+}
+
+.course-content p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.course-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.course-level,
+.course-duration {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.course-level i,
+.course-duration i {
+    color: #667eea;
+}
+
+.btn-small {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Legacy support for old featured course styles */
 .featured-course {
     background: white;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
+    margin-bottom: 2rem;
 }
 
 .featured-course:hover {
@@ -1327,6 +1513,43 @@ section {
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+/* Course page responsive design */
+@media (max-width: 768px) {
+    .featured-course-hero {
+        flex-direction: column;
+    }
+    
+    .featured-course-hero .course-image {
+        min-width: auto;
+        padding: 2rem;
+    }
+    
+    .featured-course-hero .course-image i {
+        font-size: 3rem;
+    }
+    
+    .featured-course-hero .course-info {
+        padding: 2rem;
+    }
+    
+    .course-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .course-meta {
+        justify-content: center;
+    }
+    
+    .featured-section .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .all-courses-section .section-header h2 {
+        font-size: 1.5rem;
+    }
 }
 
 /* Mobile responsiveness for simplified about page */
